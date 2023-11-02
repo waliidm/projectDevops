@@ -17,7 +17,8 @@
         <java.version>11</java.version>
         <sonar.host.url>http://192.168.11.129:9000</sonar.host.url>
         <sonar.projectKey>projetDevops</sonar.projectKey>
-        <sonar.sources>src</sonar.sources>
+        <sonar.sources>src/main</sonar.sources>
+        <sonar.tests>src/test</sonar.tests>
     </properties>
     <dependencies>
         <dependency>
