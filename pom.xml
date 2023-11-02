@@ -15,6 +15,10 @@
     <description>DevOps_Project</description>
     <properties>
         <java.version>11</java.version>
+        <sonar.host.url>http://192.168.11.129:9000</sonar.host.url>
+        <sonar.projectKey>projetDevops</sonar.projectKey>
+        <sonar.sources>src</sonar.sources>
+        <sonar.tests>test</sonar.tests>
     </properties>
     <dependencies>
         <dependency>
@@ -79,6 +83,13 @@
                     </excludes>
                 </configuration>
             </plugin>
+
+            <plugin>
+                <groupId>org.sonarsource.scanner.maven</groupId>
+                <artifactId>sonar-maven-plugin</artifactId>
+                <version>3.9.0.2155</version> 
+            </plugin>
+
         </plugins>
     </build>
 
