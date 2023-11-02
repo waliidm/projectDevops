@@ -34,9 +34,7 @@ pipeline {
 
 	stage('Deploy to Nexus') {
             steps {
-                withMaven(maven: 'M2_HOME') {
                     sh 'mvn deploy'
-                }
             }
         }
     }
