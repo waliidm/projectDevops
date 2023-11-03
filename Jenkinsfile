@@ -42,7 +42,7 @@ pipeline {
         stage('Building image') {
         steps{
             script {
-            dockerImage = docker.build dockerhubregistry
+            dockerImage = docker.build(dockerhubregistry,".")
             }
         }
         }
